@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main__title">
+        <div class="container">
+          <div class="title__body">
+            <img
+              src="./img/SPLITTER.png"
+              alt="splitter"
+              class="logo__splitter"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="calc__body">
+          <section class="section">
+            <div class="section__dollar">
+              <div class="bill__dollar">
+                <label class="main__lable lable-dollar" for="bill">Bill</label>
+                <input
+                  id="bill"
+                  class="main__input input__dollar"
+                  type="number"
+                  placeholder=""
+                />
+              </div>
+              <div class="tip__block">
+                <p class="main__lable tip__p">Select Tip %</p>
+                <div class="button__box">
+                  <button class="main__btn btn-5">5%</button>
+                  <button class="main__btn btn-10">10%</button>
+                  <button class="main__btn btn-15">15%</button>
+                  <button class="main__btn btn-20">20%</button>
+                  <button class="main__btn btn-25">25%</button>
+                  <button class="main__btn btn-custom">Custom</button>
+                </div>
+              </div>
+              <div class="bill__dollar">
+                <div class="lable__box">
+                  <label class="main__lable lable-people" for="people"
+                    >Number of People
+                  </label>
+                  <span class="people__span displayNone">Can’t be zero</span>
+                </div>
+                <input
+                  id="people"
+                  class="main__input input__people"
+                  type="number"
+                  placeholder=""
+                />
+              </div>
+            </div>
+            <div class="total__content">
+              <div class="totla">
+                <div class="total__block">
+                  <div class="tips">
+                    <div class="tips__item">
+                      <p class="tips__p">Tip Amount</p>
+                      <span class="tips__span">/ person</span>
+                    </div>
+                    <div class="tips__total total-amount">$0.00</div>
+                  </div>
+                  <div class="tips">
+                    <div class="tips__item">
+                      <p class="tips__p totla__p">Total</p>
+                      <span class="tips__span total__span">/ person</span>
+                    </div>
+                    <div class="tips__total total-total">$0.00</div>
+                  </div>
+                </div>
+                <button class="reset">RESET</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
